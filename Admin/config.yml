@@ -1,0 +1,26 @@
+# Tidak ada spasi di awal baris ini
+backend:
+  # Dua spasi di awal baris ini
+  name: git-gateway
+  branch: main # Pastikan ini nama branch utama Anda
+
+# Tidak ada spasi di awal baris ini
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Tidak ada spasi di awal baris ini
+collections:
+  # Dua spasi di awal baris ini, lalu tanda '-' dan satu spasi
+  - name: "products"
+    # Empat spasi di awal baris ini
+    label: "Produk Toko"
+    folder: "products"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      # Enam spasi di awal baris ini, lalu tanda '-' dan satu spasi
+      - { label: "Nama Produk", name: "title", widget: "string" }
+      - { label: "Harga (IDR, angka saja)", name: "price", widget: "number" }
+      - { label: "Gambar Produk", name: "image", widget: "image", required: false }
+      - { label: "Deskripsi Singkat", name: "description", widget: "text", required: false }
+      - { label: "Snipcart: ID Item (Unik)", name: "data_item_id", widget: "string", hint: "Contoh: SKU001. Jangan diubah setelah dibuat!" }
