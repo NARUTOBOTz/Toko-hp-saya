@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Sederhana Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="stylesheet" href="https://app.snipcart.com/themes/v3.4.0/default/snipcart.css" />
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Toko Saya</h1>
+        <button class="snipcart-checkout">
+            Keranjang (<span class="snipcart-total-items"></span>)
+        </button>
+    </header>
+
+    <main id="product-list">
+        <h2>Produk Kami</h2>
+        <p>Belum ada produk yang ditampilkan. Silakan tambahkan produk melalui panel admin.</p>
+        </main>
+
+    <footer>
+        <p>&copy; 2025 Toko Saya</p>
+    </footer>
+
+    <div hidden id="snipcart" data-api-key="YOUR_SNIPCART_PUBLIC_API_KEY_NANTI_DIGANTI_USER"></div>
+    <script async src="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.js"></script>
+</body>
+</html>
